@@ -183,7 +183,6 @@ int main() {
     auto ans = TSPBranchAndBound(adjacencyMatrix);
     auto finish = omp_get_wtime();
     auto elapsed = finish - start;
-    std::cout << "Threads used: " << omp_get_num_threads() << std::endl;
     std::cout << "Elapsed Time: " << std::fixed << std::setprecision(5) << elapsed << " seconds" << std::endl;
     std::cout << "Memory Usage: " << getMemoryUsage() << " MB" << std::endl;
 
